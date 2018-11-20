@@ -1,10 +1,10 @@
-package btcutil_test
+package btgutil_test
 
 import (
 	"fmt"
 	"math"
 
-	"github.com/btcsuite/btcutil"
+	btcutil "github.com/btgsuite/btgutil"
 )
 
 func ExampleAmount() {

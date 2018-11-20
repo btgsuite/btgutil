@@ -9,12 +9,12 @@ cases which are either not possible or can't reliably be tested via the public
 interface. The functions are only exported while the tests are being run.
 */
 
-package btcutil
+package btgutil
 
 import (
-	"github.com/btcsuite/btcd/btcec"
-	"github.com/btcsuite/btcutil/base58"
-	"github.com/btcsuite/btcutil/bech32"
+	"github.com/btgsuite/btgd/btcec"
+	"github.com/btgsuite/btgutil/base58"
+	"github.com/btgsuite/btgutil/bech32"
 	"golang.org/x/crypto/ripemd160"
 )
 

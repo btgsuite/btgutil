@@ -3,7 +3,7 @@
 // license that can be found in the LICENSE file.
 
 /*
-Package btcutil provides bitcoin-specific convenience functions and types.
+package btgutil provides bitcoin-specific convenience functions and types.
 
 Block Overview
 
@@ -43,4 +43,4 @@ To decode/encode an address:
 	}
 	fmt.Println(addr.EncodeAddress())
 */
-package btcutil
+package btgutil

@@ -2,7 +2,7 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil_test
+package btgutil_test
 
 import (
 	"crypto/x509"
@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/btcsuite/btcutil"
+	btcutil "github.com/btgsuite/btgutil"
 	//"github.com/davecgh/go-spew/spew"
 )
 

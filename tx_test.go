@@ -2,7 +2,7 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil_test
+package btgutil_test
 
 import (
 	"bytes"
@@ -10,8 +10,8 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/btcsuite/btcd/chaincfg/chainhash"
-	"github.com/btcsuite/btcutil"
+	"github.com/btgsuite/btgd/chaincfg/chainhash"
+	btcutil "github.com/btgsuite/btgutil"
 	"github.com/davecgh/go-spew/spew"
 )
 

@@ -2,7 +2,7 @@
 // Use of this source code is governed by an ISC
 // license that can be found in the LICENSE file.
 
-package btcutil_test
+package btgutil_test
 
 import (
 	"os"
@@ -12,7 +12,7 @@ import (
 	"testing"
 	"unicode"
 
-	"github.com/btcsuite/btcutil"
+	btcutil "github.com/btgsuite/btgutil"
 )
 
 // TestAppDataDir tests the API for AppDataDir to ensure it gives expected
