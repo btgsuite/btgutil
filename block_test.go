@@ -316,9 +316,9 @@ var Block100000 = wire.MsgBlock{
 			0x28, 0xc3, 0x06, 0x7c, 0xc3, 0x8d, 0x48, 0x85,
 			0xef, 0xb5, 0xa4, 0xac, 0x42, 0x47, 0xe9, 0xf3,
 		}), // f3e94742aca4b5ef85488dc37c06c3282295ffec960994b2c0d5ac2a25a95766
-		Timestamp: time.Unix(1293623863, 0), // 2010-12-29 11:57:43 +0000 UTC
-		Bits:      0x1b04864c,               // 453281356
-		Nonce:     0x10572b0f,               // 274148111
+		Timestamp: time.Unix(1293623863, 0),          // 2010-12-29 11:57:43 +0000 UTC
+		Bits:      0x1b04864c,                        // 453281356
+		Nonce:     wire.Uint256FromUint32(274148111), // 274148111
 	},
 	Transactions: []*wire.MsgTx{
 		{
