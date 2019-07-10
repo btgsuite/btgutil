@@ -50,8 +50,8 @@ func TestAddresses(t *testing.T) {
 		// Positive P2PKH tests.
 		{
 			name:    "mainnet p2pkh",
-			addr:    "1MirQ9bwyQcGVJPwKUgapu5ouK2E2Ey4gX",
-			encoded: "1MirQ9bwyQcGVJPwKUgapu5ouK2E2Ey4gX",
+			addr:    "GYxq2iCpYM1BKgcnsGYZH3o4eoJKvQYf4k",
+			encoded: "GYxq2iCpYM1BKgcnsGYZH3o4eoJKvQYf4k",
 			valid:   true,
 			result: btcutil.TstAddressPubKeyHash(
 				[ripemd160.Size]byte{
@@ -68,8 +68,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "mainnet p2pkh 2",
-			addr:    "12MzCDwodF9G1e7jfwLXfR164RNtx4BRVG",
-			encoded: "12MzCDwodF9G1e7jfwLXfR164RNtx4BRVG",
+			addr:    "GNkZkMwX1DfAVqTFiTcyvVjV8KXwSNJW8Q",
+			encoded: "GNkZkMwX1DfAVqTFiTcyvVjV8KXwSNJW8Q",
 			valid:   true,
 			result: btcutil.TstAddressPubKeyHash(
 				[ripemd160.Size]byte{
@@ -148,8 +148,8 @@ func TestAddresses(t *testing.T) {
 			// output: 3c9018e8d5615c306d72397f8f5eef44308c98fb576a88e030c25456b4f3a7ac
 			// input:  837dea37ddc8b1e3ce646f1a656e79bbd8cc7f558ac56a169626d649ebe2a3ba.
 			name:    "mainnet p2sh",
-			addr:    "3QJmV3qfvL9SuYo34YihAf3sRCW3qSinyC",
-			encoded: "3QJmV3qfvL9SuYo34YihAf3sRCW3qSinyC",
+			addr:    "Adj4DrvxXFZjzcvojHKw3QwrQX1uGfohPY",
+			encoded: "Adj4DrvxXFZjzcvojHKw3QwrQX1uGfohPY",
 			valid:   true,
 			result: btcutil.TstAddressScriptHash(
 				[ripemd160.Size]byte{
@@ -206,8 +206,8 @@ func TestAddresses(t *testing.T) {
 			// output: b0539a45de13b3e0403909b8bd1a555b8cbe45fd4e3f3fda76f3a5f52835c29d
 			// input: (not yet redeemed at time test was written)
 			name:    "mainnet p2sh 2",
-			addr:    "3NukJ6fYZJ5Kk8bPjycAnruZkE5Q7UW7i8",
-			encoded: "3NukJ6fYZJ5Kk8bPjycAnruZkE5Q7UW7i8",
+			addr:    "Adj4DrvxXFZjzcvojHKw3QwrQX1uGfohPY",
+			encoded: "Adj4DrvxXFZjzcvojHKw3QwrQX1uGfohPY",
 			valid:   true,
 			result: btcutil.TstAddressScriptHash(
 				[ripemd160.Size]byte{
@@ -261,7 +261,7 @@ func TestAddresses(t *testing.T) {
 		{
 			name:    "mainnet p2pk compressed (0x02)",
 			addr:    "02192d74d0cb94344c9569c2e77901573d8d7903c3ebec3a957724895dca52c6b4",
-			encoded: "13CG6SJ3yHUXo4Cr2RY4THLLJrNFuG3gUg",
+			encoded: "GL3BWZczx95psXW8xNCAt3gEE2A72DdFHr",
 			valid:   true,
 			result: btcutil.TstAddressPubKey(
 				[]byte{
@@ -283,7 +283,7 @@ func TestAddresses(t *testing.T) {
 		{
 			name:    "mainnet p2pk compressed (0x03)",
 			addr:    "03b0bd634234abbb1ba1e986e884185c61cf43e001f9137f23c2c409273eb16e65",
-			encoded: "15sHANNUBSh6nDp8XkDPmQcW6n3EFwmvE6",
+			encoded: "GNiCaVhRAJJPrh7RTgsWCAxQ1wq5KP9xE3",
 			valid:   true,
 			result: btcutil.TstAddressPubKey(
 				[]byte{
@@ -306,7 +306,7 @@ func TestAddresses(t *testing.T) {
 			name: "mainnet p2pk uncompressed (0x04)",
 			addr: "0411db93e1dcdb8a016b49840f8c53bc1eb68a382e97b1482ecad7b148a6909a5cb2" +
 				"e0eaddfb84ccf9744464f82e160bfa9b8b64f9d4c03f999b8643f656b412a3",
-			encoded: "12cbQLTFMXRnSzktFkuoG3eHoMeFtpTu3S",
+			encoded: "GKTWpTnCLP35XU4BBhZugozBiXS6rdtMZQ",
 			valid:   true,
 			result: btcutil.TstAddressPubKey(
 				[]byte{
@@ -335,7 +335,7 @@ func TestAddresses(t *testing.T) {
 			name: "mainnet p2pk hybrid (0x06)",
 			addr: "06192d74d0cb94344c9569c2e77901573d8d7903c3ebec3a957724895dca52c6b4" +
 				"0d45264838c0bd96852662ce6a847b197376830160c6d2eb5e6a4c44d33f453e",
-			encoded: "1Ja5rs7XBZnK88EuLVcFqYGMEbBitzchmX",
+			encoded: "GbR1GzSUARPcCbYCGSGNGJcF9kyZwN8owS",
 			valid:   true,
 			result: btcutil.TstAddressPubKey(
 				[]byte{
@@ -364,7 +364,7 @@ func TestAddresses(t *testing.T) {
 			name: "mainnet p2pk hybrid (0x07)",
 			addr: "07b0bd634234abbb1ba1e986e884185c61cf43e001f9137f23c2c409273eb16e65" +
 				"37a576782eba668a7ef8bd3b3cfb1edb7117ab65129b8a2e681f3c1e0908ef7b",
-			encoded: "1ExqMmf6yMxcBMzHjbj41wbqYuqoX6uBLG",
+			encoded: "GXokmtz3xDZuFqHafYPAShwjU5deWqpRvy",
 			valid:   true,
 			result: btcutil.TstAddressPubKey(
 				[]byte{
@@ -523,8 +523,8 @@ func TestAddresses(t *testing.T) {
 		// Segwit address tests.
 		{
 			name:    "segwit mainnet p2wpkh v0",
-			addr:    "BC1QW508D6QEJXTDG4Y5R3ZARVARY0C5XW7KV8F3T4",
-			encoded: "bc1qw508d6qejxtdg4y5r3zarvary0c5xw7kv8f3t4",
+			addr:    "btg1q256zut4k0t9cdcl2k97mrf399ynpmgej5yljy3",
+			encoded: "btg1q256zut4k0t9cdcl2k97mrf399ynpmgej5yljy3",
 			valid:   true,
 			result: btcutil.TstAddressWitnessPubKeyHash(
 				0,
@@ -542,8 +542,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "segwit mainnet p2wsh v0",
-			addr:    "bc1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qccfmv3",
-			encoded: "bc1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3qccfmv3",
+			addr:    "btg1qmt88k6glcxzru095nzmg50lc4swrgspl9xc4efkatdhhhu6frt8scy0aqr",
+			encoded: "btg1qmt88k6glcxzru095nzmg50lc4swrgspl9xc4efkatdhhhu6frt8scy0aqr",
 			valid:   true,
 			result: btcutil.TstAddressWitnessScriptHash(
 				0,
@@ -565,8 +565,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "segwit testnet p2wpkh v0",
-			addr:    "tb1qw508d6qejxtdg4y5r3zarvary0c5xw7kxpjzsx",
-			encoded: "tb1qw508d6qejxtdg4y5r3zarvary0c5xw7kxpjzsx",
+			addr:    "tbtg1q734rfrv9nfrjrzcrwcqfwy3cjv2vn4uwpfqcta",
+			encoded: "tbtg1q734rfrv9nfrjrzcrwcqfwy3cjv2vn4uwpfqcta",
 			valid:   true,
 			result: btcutil.TstAddressWitnessPubKeyHash(
 				0,
@@ -584,8 +584,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "segwit testnet p2wsh v0",
-			addr:    "tb1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3q0sl5k7",
-			encoded: "tb1qrp33g0q5c5txsp9arysrx4k6zdkfs4nce4xj0gdcccefvpysxf3q0sl5k7",
+			addr:    "tbtg1q9a3kj0d4w8qwahhjpev3rfyf566pjpg2ehd6evgrsk2kzemknhmqcnp0vu",
+			encoded: "tbtg1q9a3kj0d4w8qwahhjpev3rfyf566pjpg2ehd6evgrsk2kzemknhmqcnp0vu",
 			valid:   true,
 			result: btcutil.TstAddressWitnessScriptHash(
 				0,
@@ -607,8 +607,8 @@ func TestAddresses(t *testing.T) {
 		},
 		{
 			name:    "segwit testnet p2wsh witness v0",
-			addr:    "tb1qqqqqp399et2xygdj5xreqhjjvcmzhxw4aywxecjdzew6hylgvsesrxh6hy",
-			encoded: "tb1qqqqqp399et2xygdj5xreqhjjvcmzhxw4aywxecjdzew6hylgvsesrxh6hy",
+			addr:    "tbtg1q62ugmvmuk8qtx5yuxax378syex9rmttsa8lcthmhfvxnkzcrnggq5th2td",
+			encoded: "tbtg1q62ugmvmuk8qtx5yuxax378syex9rmttsa8lcthmhfvxnkzcrnggq5th2td",
 			valid:   true,
 			result: btcutil.TstAddressWitnessScriptHash(
 				0,
